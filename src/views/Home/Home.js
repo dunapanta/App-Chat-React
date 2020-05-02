@@ -59,6 +59,7 @@ class Home extends Component {
               <Integrantes />
             </div>
           </div>
+          <Footer />
         </div>
         );
     }
