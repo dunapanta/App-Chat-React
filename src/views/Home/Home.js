@@ -17,6 +17,8 @@ import Button from "components/CustomButtons/Button.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
+import AppInfo from 'views/Home/HomeSections/AppInfo';
+import Integrantes from 'views/Home/HomeSections/Integrantes';
 
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
 
@@ -51,6 +53,12 @@ class Home extends Component {
                 </GridContainer>
               </div>
             </Parallax>
+            <div className={classNames(classes.main, classes.mainRaised)}>
+            <div className={classes.container}>
+              <AppInfo />
+              <Integrantes />
+            </div>
+          </div>
         </div>
         );
     }
