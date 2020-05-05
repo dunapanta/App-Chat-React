@@ -21,6 +21,7 @@ export default function Register(props) {
   return (
     <div className="login">
       <container fixed>
+        <i class="fas fa-user-plus" ></i>
         <h2>Iniciar Sesión</h2>
         <form>
           <div className={classes.margin}>
@@ -40,14 +41,14 @@ export default function Register(props) {
               </Grid>
             </Grid>
           </div>
-          <div className={classes.margin}>
-
+          <div className={classes.margin} color="white">
+            
             <Grid container spacing={1} alignItems="flex-end">
               <Grid item>
                 <AccountCircle />
               </Grid>
               <Grid item>
-                <TextField label="Contraseña"
+                <TextField  label="Contraseña"
                   type="password"
                   placeholder="Contraseña"
                   onChange={props.handleLoginForm}
@@ -58,7 +59,7 @@ export default function Register(props) {
             </Grid>
           </div>
          
-          <Button variant="contained"color="primary">Iniciar Sesión</Button>
+          <Button color="primary" >Iniciar Sesión</Button>
         </form>
       </container>
     </div>

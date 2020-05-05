@@ -8,15 +8,17 @@ import {
 import Login from "views/Autenticacion/iniciar sesion/login-component";
 import Register from "views/Autenticacion/registro/Registrarse/register-component";
 import '../../../App.css';
+
 function HomeRegister(props){
     let {email:emailLogin,password:passwordLogin}=props.user.currentLogin;   
     let {
         email:emailRegister,
         password:passwordRegister
     } = props.user.currentRegister;
+    
     return (
         <div className="App">
-
+            
             <section className="Container"> 
                 <Login
                     handleLoginForm={props.handleLoginForm}
