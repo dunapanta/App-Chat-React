@@ -7,7 +7,7 @@ import {
 } from "store/actions/user-actions";
 import Login from "views/Autenticacion/iniciar sesion/login-component";
 import Register from "views/Autenticacion/registro/Registrarse/register-component";
-
+import '../../../App.css';
 function HomeRegister(props){
     let {email:emailLogin,password:passwordLogin}=props.user.currentLogin;   
     let {
@@ -16,16 +16,20 @@ function HomeRegister(props){
     } = props.user.currentRegister;
     return (
         <div className="App">
-            <Login
-                handleLoginForm={props.handleLoginForm}
-                email={emailLogin}
-                password={passwordLogin}            
-            />
-            <Register
-                handleRegisterForm={props.handleRegisterForm}
-                email={emailRegister}
-                password={passwordRegister}            
-            />
+
+            <section className="Container"> 
+                <Login
+                    handleLoginForm={props.handleLoginForm}
+                    email={emailLogin}
+                    password={passwordLogin}
+                />
+                {/* <Register
+                    handleRegisterForm={props.handleRegisterForm}
+                    email={emailRegister}
+                    password={passwordRegister}
+                /> */}
+            </section>
+           
         </div>
 
     );
@@ -48,3 +52,6 @@ export default connect(
     mapStateToProps,
     mapDispatchToProps
 )(HomeRegister);
+
+
+{/* <i class="far fa-address-card"></i> */}

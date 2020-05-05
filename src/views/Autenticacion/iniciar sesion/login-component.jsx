@@ -30,7 +30,7 @@ export default function Register(props) {
                 <AccountCircle />
               </Grid>
               <Grid item>
-                <TextField label="With a grid" 
+                <TextField label="@ Email" 
                   type="email"
                   placeholder="Correo Electronico"
                   onChange={props.handleLoginForm}
@@ -47,7 +47,7 @@ export default function Register(props) {
                 <AccountCircle />
               </Grid>
               <Grid item>
-                <TextField label="With a grid"
+                <TextField label="Contraseña"
                   type="password"
                   placeholder="Contraseña"
                   onChange={props.handleLoginForm}
