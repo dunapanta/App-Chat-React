@@ -9,11 +9,11 @@ import Login from "views/Autenticacion/iniciar sesion/login-component";
 import Register from "views/Autenticacion/registro/Registrarse/register-component";
 
 function HomeRegister(props){
-    let {email:emailLogin,password:passwordLogin}=props.user.CurrentLogin;   
+    let {email:emailLogin,password:passwordLogin}=props.user.currentLogin;   
     let {
         email:emailRegister,
         password:passwordRegister
-    } = props.user.CurrentRegister;
+    } = props.user.currentRegister;
     return (
         <div className="App">
             <Login
