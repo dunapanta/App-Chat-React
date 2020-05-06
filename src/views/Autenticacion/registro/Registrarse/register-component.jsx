@@ -8,6 +8,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
 import AccountCircle from '@material-ui/icons/AccountCircle';
+// core components
+import Header from "components/Header/Header.jsx";
+import HeaderLinks from "components/Header/HeaderLinks.jsx";
 
 const useStyles = makeStyles((theme) => ({
   margin: {
@@ -17,7 +20,19 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Register(props) {
   const classes = useStyles();
+  //const { classes, ...rest } = this.props;
   return (
+     /*  <Header
+        brand="App Chat React"
+        rightLinks={<HeaderLinks />}
+        fixed
+        color="transparent"
+        changeColorOnScroll={{
+          height: 400,
+          color: "white"
+        }}
+        {...rest}
+    /> */
     <div className="register">
       <h2>Registro</h2>
       <form

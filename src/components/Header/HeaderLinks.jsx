@@ -24,28 +24,36 @@ function HeaderLinks({ ...props }) {
   const { classes } = props;
   return (
     <List className={classes.list}>
+
       <ListItem className={classes.listItem}>
-        {/* <Button
-          href="https://github.com/dunapanta/App-Chat-React"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        > */}
-        <Link to="/registro">
-          <PersonAdd className={classes.icons} /> REGISTRARSE
+        <Link to="/registro" style={{ color: 'inherit', textDecoration: 'inherit' }}>
+            <Button
+              href="https://github.com/dunapanta/App-Chat-React"
+              color="transparent"
+              target="_blank"
+              className={classes.navLink}
+            >
+              <PersonAdd className={classes.icons} /> REGISTRARSE
+            </Button>
         </Link>
-        {/* </Button> */}
       </ListItem>
+     
+
+      
       <ListItem className={classes.listItem}>
-        <Button
-          href="https://github.com/dunapanta/App-Chat-React"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        >
-          <VpnKeyRounded className={classes.icons} /> INGRESAR
-        </Button>
+        <Link to="/registro" style={{ color: 'inherit', textDecoration: 'inherit' }}>
+          <Button
+            href="https://github.com/dunapanta/App-Chat-React"
+            color="transparent"
+            target="_blank"
+            className={classes.navLink}
+          >
+            <VpnKeyRounded className={classes.icons} /> INGRESAR
+          </Button>
+        </Link>
       </ListItem>
+      
+
       <ListItem className={classes.listItem}>
         <Tooltip
           id="github-tooltip"
