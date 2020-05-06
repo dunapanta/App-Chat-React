@@ -14,14 +14,24 @@ const useStyles = makeStyles((theme) => ({
   margin: {
     margin: theme.spacing(1),
   },
+  root: {
+    '& .MuiTextField-root': {
+      margin: theme.spacing(1),
+      width: '25ch',
+    },
+  },
 }));
+
 
 export default function Register(props) {
   const classes = useStyles();
   return (
+    
     <div className="login">
       <container fixed>
-        <i class="fas fa-user-plus" ></i>
+        {/* <i class="fas fa-user-plus" ></i>
+        <i class="fas fa-sms"></i> */}
+        <i class="fas fa-comments-dollar"></i>
         <h2>Iniciar Sesión</h2>
         <form>
           <div className={classes.margin}>
@@ -57,6 +67,9 @@ export default function Register(props) {
                 />
               </Grid>
             </Grid>
+
+            
+
           </div>
          
           <Button color="primary" >Iniciar Sesión</Button>

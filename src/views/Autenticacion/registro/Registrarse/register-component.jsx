@@ -19,6 +19,8 @@ export default function Register(props) {
   const classes = useStyles();
   return (
     <div className="register">
+      <i class="fas fa-user-plus" ></i>
+      
       <h2>Registro</h2>
       <form
         onSubmit={e => {
@@ -59,10 +61,8 @@ export default function Register(props) {
               />
             </Grid>
           </Grid>
-        </div>
-      
-        <Button type="submit" variant="contained" color="primary">Save</Button>
-        
+        </div>              
+        <Button color="primary" >Save</Button>
       </form>
     </div>
   );

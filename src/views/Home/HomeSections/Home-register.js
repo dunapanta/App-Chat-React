@@ -20,18 +20,20 @@ function HomeRegister(props){
         <div className="App">
             
             <section className="Container"> 
+               
+                <Register
+                    handleRegisterForm={props.handleRegisterForm}
+                    email={emailRegister}
+                    password={passwordRegister}
+                />
+            </section>
+            {/* <section className="Container2">
                 <Login
                     handleLoginForm={props.handleLoginForm}
                     email={emailLogin}
                     password={passwordLogin}
                 />
-                {/* <Register
-                    handleRegisterForm={props.handleRegisterForm}
-                    email={emailRegister}
-                    password={passwordRegister}
-                /> */}
-            </section>
-           
+            </section> */}
         </div>
 
     );
