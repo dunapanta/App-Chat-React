@@ -17,7 +17,14 @@ const useStyles = makeStyles((theme) => ({
   margin: {
     margin: theme.spacing(1),
   },
+  root: {
+    '& .MuiTextField-root': {
+      margin: theme.spacing(1),
+      width: '25ch',
+    },
+  },
 }));
+
 
 export default function Register(props) {
   const classes = useStyles();
@@ -28,7 +35,7 @@ export default function Register(props) {
           brand="App Chat React"
           rightLinks={<HeaderLinks />}
           fixed
-          color="prymary"
+          color="info"
           changeColorOnScroll={{
             height: 400,
             color: "white"

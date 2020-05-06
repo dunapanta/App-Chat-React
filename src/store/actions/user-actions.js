@@ -1,4 +1,4 @@
-// import auth from "firebase/config-utils";
+import auth from "firebase/config-utils";
 
 export const setCurrentRegister = event => {
     return {
@@ -23,11 +23,16 @@ export const setCurrentLogin = event => {
 export const register = () => {
     return (dispatch, getState) => {
         console.log(getState());
-        // auth.createUserWithEmailAndPassword(email, password).then( response => console.log(response)).catch(function(error) {
-        //   // Handle Errors here.
-        //   var errorCode = error.code;
-        //   var errorMessage = error.message;
-        // //    ...
-        // });
+        let {
+            email,
+            password
+        }=getState().user.currentRegister;
+        auth.createUserWithEmailAndPassword(email, password).then( response => console.log(response)).catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+        //    ...
+        console.log(errorCode,errorMessage);
+        });
     };
 };

@@ -2,12 +2,23 @@
   display: flex;  
   text-align: center;
   justify-content: center;
-  border: 1px solid green ;
   width: 100%;
   height: 250px; 
   
 }
-.Container{
+.Container {
+  display:flex;
+  justify-content: center;
+  width: center;
+  color:white;
+  border-radius: 15px;
+  height: 330px;
+  border: 1px solid black;
+  background: #c2e59c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+.Container2 {
   display:flex;
   justify-content: center;
   width: center;
@@ -23,6 +34,7 @@
   font-size: 35px;
   margin-top: 15px;
 }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -46,7 +58,8 @@
 }
 
 .App-link {
-  color: #61dafb;
+  /* color: #61dafb; */
+  color:green;
 }
 
 @keyframes App-logo-spin {

@@ -20,65 +20,71 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Register(props) {
   const classes = useStyles();
+  const { /* classes,  */...rest } = props;
   //const { classes, ...rest } = this.props;
+ 
   return (
-     /*  <Header
+    <div>
+      <Header
         brand="App Chat React"
         rightLinks={<HeaderLinks />}
         fixed
-        color="transparent"
+        color="primary"
         changeColorOnScroll={{
           height: 400,
           color: "white"
         }}
         {...rest}
-    /> */
-    <div className="register">
-      <h2>Registro</h2>
-      <form
-        onSubmit={e => {
-          e.preventDefault();
-          props.handleRegister();
-        }}
-      >
-        <div className={classes.margin}>
+      /> 
+      <div className="register">
+        <i class="fas fa-user-plus" ></i>
 
-          <Grid container spacing={1} alignItems="flex-end">
-            <Grid item>
-              <AccountCircle />
-            </Grid>
-            <Grid item>
-              <TextField label="@ Email"
-                type="email"
-                placeholder="Correo Electronico"
-                onChange={props.handleRegisterForm}
-                value={props.email}
-                name="email"
-              />
-            </Grid>
-          </Grid>
-        </div>
-        <div className={classes.margin}>
+        <h2>Registro</h2>
+        <form
+          onSubmit={e => {
+            e.preventDefault();
+            props.handleRegister();
+          }}
+        >
+          <div className={classes.margin}>
 
-          <Grid container spacing={1} alignItems="flex-end">
-            <Grid item>
-              <AccountCircle />
+            <Grid container spacing={1} alignItems="flex-end">
+              <Grid item>
+                <AccountCircle />
+              </Grid>
+              <Grid item>
+                <TextField label="@ Email"
+                  type="email"
+                  placeholder="Correo Electronico"
+                  onChange={props.handleRegisterForm}
+                  value={props.email}
+                  name="email"
+                />
+              </Grid>
             </Grid>
-            <Grid item>
-              <TextField label="Contraseña"
-                type="password"
-                placeholder="Contraseña"
-                onChange={props.handleRegisterForm}
-                value={props.password}
-                name="password"
-              />
+          </div>
+          <div className={classes.margin}>
+
+            <Grid container spacing={1} alignItems="flex-end">
+              <Grid item>
+                <AccountCircle />
+              </Grid>
+              <Grid item>
+                <TextField label="Contraseña"
+                  type="password"
+                  placeholder="Contraseña"
+                  onChange={props.handleRegisterForm}
+                  value={props.password}
+                  name="password"
+                />
+              </Grid>
             </Grid>
-          </Grid>
-        </div>
-      
-        <Button type="submit" variant="contained" color="primary">Save</Button>
-        
-      </form>
+          </div>
+          <Button color="primary" >Save</Button>
+        </form>
+      </div>
     </div>
+      
+    
   );
 }
