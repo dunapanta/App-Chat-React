@@ -23,6 +23,7 @@ function HomeRegister(props){
                
                 <Register
                     handleRegisterForm={props.handleRegisterForm}
+                    handleRegister={props.handleRegister}
                     email={emailRegister}
                     password={passwordRegister}
                 />

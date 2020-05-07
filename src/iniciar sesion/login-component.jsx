@@ -23,4 +23,4 @@ export default function Register(props) {
       </form>
     </div>
   );
-
+ }
