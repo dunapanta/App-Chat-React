@@ -2,8 +2,8 @@ import React from 'react';
 import { connect } from "react-redux";
 import {
     
-    setCurrentLogin,
-    register
+    setCurrentLogin
+    
 } from "store/actions/user-actions";
 import Login from "views/Autenticacion/iniciar sesion/login-component";
 
@@ -41,7 +41,7 @@ const mapDispatchToProps = dispatch => {
     return {
         
         handleLoginForm: event => dispatch(setCurrentLogin(event)),
-        handleRegister: event => dispatch(register())
+       
     };
 };
 

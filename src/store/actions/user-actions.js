@@ -21,6 +21,7 @@ export const setCurrentLogin = event => {
 };
 
 export const register = () => {
+    console.log("Registro");
     return (dispatch, getState) => {
         console.log(getState());
         let {

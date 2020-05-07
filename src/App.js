@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
 import Home from './views/Home/Home';
-//import Login from './views/Autenticacion/InicioSesion';
-import Register from 'views/Home/HomeSections/Home-register' ;
+//import Registre from './registro/Registrarse/register-component';
+import Login from './views/Autenticacion/InicioSesion';
+import Register from 'views/Home/HomeSections/' ;
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,11 +22,16 @@ function App() {
           <Route path="/registro">
             <Register/>
           </Route>
+          
+          <Route path="/Login">
+            <Login/>
+          </Route>
 
           <Route path="/" exact >
             <Home />
           </Route>
           </Switch >
+          
        
 
       </div>
