@@ -82,7 +82,7 @@ export default function Register(props) {
               </Grid>
             </div>
           
-            <Button color="primary" >Iniciar Sesión</Button>
+            <Button color="primary" type="submit">Iniciar Sesión</Button>
           </form>
         </container>
       </div>

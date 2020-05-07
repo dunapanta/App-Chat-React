@@ -47,7 +47,8 @@ export default function Register(props) {
         <form
           onSubmit={e => {
             e.preventDefault();
-            props.handleRegister();
+            props.handleRegisterform();
+            
           }}
         >
           <div className={classes.margin}>
