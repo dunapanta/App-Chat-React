@@ -22,9 +22,9 @@ export default function Register(props) {
   const classes = useStyles();
   const { /* classes,  */...rest } = props;
   //const { classes, ...rest } = this.props;
-  
+
   return (
-    <div className="App" style={{backgroundImage: `url(${Login})`}}>
+    <div className="App" style={{ backgroundImage: `url(${Login})` }}>
       <div>
         <Header
           brand="App Chat React"
@@ -36,10 +36,10 @@ export default function Register(props) {
             color: "white"
           }}
           {...rest}
-        /> 
+        />
       </div>
-      
-      
+
+
       <div className="Container">
         <i class="fas fa-user-plus" ></i>
 
@@ -47,8 +47,8 @@ export default function Register(props) {
         <form
           onSubmit={e => {
             e.preventDefault();
-            props.handleRegisterForm();
-            
+            props.handleRegister();
+
           }}
         >
           <div className={classes.margin}>
@@ -92,7 +92,7 @@ export default function Register(props) {
         </div>
       </div>
     </div>
-      
-    
+
+
   );
 }

@@ -1,26 +1,26 @@
 import React from 'react';
-import {connect}  from "react-redux";
+import { connect } from "react-redux";
 import {
     setCurrentRegister,
-    
+
     register
-} 
-from "store/actions/user-actions";
+}
+    from "store/actions/user-actions";
 import Register from "views/Autenticacion/registro/Registrarse/register-component";
 import '../../../App.css';
 
-function HomeRegister(props){
-     
+function HomeRegister(props) {
+
     let {
-        email:emailRegister,
-        password:passwordRegister
+        email: emailRegister,
+        password: passwordRegister
     } = props.user.currentRegister;
-    
+
     return (
         <div >
-            
-            <section > 
-               
+
+            <section >
+
                 <Register
                     handleRegisterForm={props.handleRegisterForm}
                     handleRegister={props.handleRegister}
@@ -40,15 +40,15 @@ function HomeRegister(props){
     );
 }
 
-const mapStateToProps = state=>{
+const mapStateToProps = state => {
     return {
-        user:state.user
+        user: state.user
     };
 };
 const mapDispatchToProps = dispatch => {
     return {
         handleRegisterForm: event => dispatch(setCurrentRegister(event)),
-        
+
         handleRegister: event => dispatch(register())
     };
 };
