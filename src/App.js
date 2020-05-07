@@ -12,7 +12,7 @@ import {
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div >
         <Switch>
           <Route path="/home" exact >
             <Home />

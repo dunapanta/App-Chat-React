@@ -17,9 +17,9 @@ function HomeRegister(props){
     } = props.user.currentRegister;
     
     return (
-        <div className="App">
+        <div >
             
-            <section className="Container"> 
+            <section > 
                
                 <Register
                     handleRegisterForm={props.handleRegisterForm}
