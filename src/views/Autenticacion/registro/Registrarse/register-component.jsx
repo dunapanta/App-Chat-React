@@ -85,7 +85,7 @@ export default function Register(props) {
               </Grid>
             </Grid>
           </div>
-          <Button color="primary" type="submit" >Save</Button>
+          <Button color="primary" type="submit" >Guardar</Button>
         </form>
         <div className={classes.right}>
           &copy; {1900 + new Date().getYear()} , App Chat React
