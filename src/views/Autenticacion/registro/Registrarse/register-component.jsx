@@ -11,7 +11,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 // core components
 import Header from "components/Header/Header.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
-
+import Login from '../../../../assets/img/login2.jpg';
 const useStyles = makeStyles((theme) => ({
   margin: {
     margin: theme.spacing(1),
@@ -22,21 +22,25 @@ export default function Register(props) {
   const classes = useStyles();
   const { /* classes,  */...rest } = props;
   //const { classes, ...rest } = this.props;
- 
+  
   return (
-    <div>
-      <Header
-        brand="App Chat React"
-        rightLinks={<HeaderLinks />}
-        fixed
-        color="primary"
-        changeColorOnScroll={{
-          height: 400,
-          color: "white"
-        }}
-        {...rest}
-      /> 
-      <div className="register">
+    <div className="App" style={{backgroundImage: `url(${Login})`}}>
+      <div>
+        <Header
+          brand="App Chat React"
+          rightLinks={<HeaderLinks />}
+          fixed
+          color="primary"
+          changeColorOnScroll={{
+            height: 400,
+            color: "white"
+          }}
+          {...rest}
+        /> 
+      </div>
+      
+      
+      <div className="Container">
         <i class="fas fa-user-plus" ></i>
 
         <h2>Registro</h2>
@@ -44,6 +48,7 @@ export default function Register(props) {
           onSubmit={e => {
             e.preventDefault();
             props.handleRegister();
+            
           }}
         >
           <div className={classes.margin}>
@@ -82,6 +87,9 @@ export default function Register(props) {
           </div>
           <Button color="primary" type="submit">Save</Button>
         </form>
+        <div className={classes.right}>
+          &copy; {1900 + new Date().getYear()} , App Chat React
+        </div>
       </div>
     </div>
       
