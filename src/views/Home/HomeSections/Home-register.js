@@ -57,5 +57,3 @@ export default connect(
     mapStateToProps,
     mapDispatchToProps
 )(HomeRegister);
-
-
