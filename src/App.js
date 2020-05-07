@@ -3,7 +3,7 @@ import './App.css';
 import Home from './views/Home/Home';
 // import Registre from './registro/Registrarse/register-component';
 // import Login from './views/Autenticacion/InicioSesion';
-import Register from 'views/Home/HomeSections/' ;
+import Register from '../src/views/Autenticacion/registro/Registrarse/register-component' ;
 import {
   BrowserRouter as Router,
   Switch,

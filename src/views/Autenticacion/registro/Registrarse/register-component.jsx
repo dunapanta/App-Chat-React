@@ -47,7 +47,7 @@ export default function Register(props) {
         <form
           onSubmit={e => {
             e.preventDefault();
-            props.handleRegisterform();
+            props.handleRegisterForm();
             
           }}
         >
@@ -85,7 +85,7 @@ export default function Register(props) {
               </Grid>
             </Grid>
           </div>
-          <Button color="primary" type="submit" >Guardar</Button>
+          <Button color="primary" type="submit">Save</Button>
         </form>
         <div className={classes.right}>
           &copy; {1900 + new Date().getYear()} , App Chat React
