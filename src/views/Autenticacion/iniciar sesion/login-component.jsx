@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function Register(props) {
+export default function Login(props) {
   const classes = useStyles();
   const { /* classes,  */...rest } = props;
   return (
@@ -81,7 +81,7 @@ export default function Register(props) {
                 </Grid>
               </Grid>
             </div>
-          
+
             <Button color="primary" type="submit" >Iniciar Sesión</Button>
           </form>
         </container>
