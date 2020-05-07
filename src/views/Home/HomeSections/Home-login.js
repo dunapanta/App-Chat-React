@@ -41,7 +41,7 @@ const mapDispatchToProps = dispatch => {
     return {
         
         handleLoginForm: event => dispatch(setCurrentLogin(event)),
-        handleRegister: event => dispatch(register())
+       
     };
 };
 
