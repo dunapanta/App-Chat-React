@@ -49,7 +49,7 @@ const mapDispatchToProps = dispatch => {
     return {
         handleRegisterForm: event => dispatch(setCurrentRegister(event)),
 
-        handleRegister: event => dispatch(register())
+        handleRegister: () => dispatch(register())
     };
 };
 
