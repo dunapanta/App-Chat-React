@@ -12,7 +12,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 // core components
 import Header from "components/Header/Header.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
-
+import Back from "../../../assets/img/login2.jpg"
 const useStyles = makeStyles((theme) => ({
   margin: {
     margin: theme.spacing(1),
@@ -30,7 +30,7 @@ export default function Login(props) {
   const classes = useStyles();
   const { /* classes,  */...rest } = props;
   return (
-    <div>
+    <div className="App" style={{ backgroundImage: `url(${Back})` }}>
       <Header
           brand="App Chat React"
           rightLinks={<HeaderLinks />}
@@ -42,7 +42,7 @@ export default function Login(props) {
           }}
           {...rest}
       /> 
-      <div className="login">
+      <div className="Container2">
         <container fixed>
           <i class="fas fa-user-plus" ></i>
           <h2>Iniciar Sesión</h2>
@@ -84,6 +84,9 @@ export default function Login(props) {
           
             <Button color="primary" type="submit" >Iniciar Sesión</Button>
           </form>
+          <div className={classes.right}>
+            &copy; {1900 + new Date().getYear()} , App Chat React
+        </div>
         </container>
       </div>
     </div>

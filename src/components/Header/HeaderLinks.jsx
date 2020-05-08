@@ -41,7 +41,7 @@ function HeaderLinks({ ...props }) {
 
       
       <ListItem className={classes.listItem}>
-        <Link to="/registro" style={{ color: 'inherit', textDecoration: 'inherit' }}>
+        <Link to="/login" style={{ color: 'inherit', textDecoration: 'inherit' }}>
           <Button
             href="https://github.com/dunapanta/App-Chat-React"
             color="transparent"

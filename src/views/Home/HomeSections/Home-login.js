@@ -2,7 +2,8 @@ import React from 'react';
 import { connect } from "react-redux";
 import {
     
-    setCurrentLogin
+    setCurrentLogin,
+    login
     
 } from "store/actions/user-actions";
 import Login from "views/Autenticacion/iniciar sesion/login-component";
@@ -17,10 +18,10 @@ function HomeLogin(props) {
     } = props.user.currentLogin;
 
     return (
-        <div className="App">
+        <div >
 
             
-            <section className="Container2">
+            <section >
                 <Login
                     handleLoginForm={props.handleLoginForm}
                     email={emailLogin}
@@ -41,7 +42,7 @@ const mapDispatchToProps = dispatch => {
     return {
         
         handleLoginForm: event => dispatch(setCurrentLogin(event)),
-       
+        handleLogin:()=> dispatch(login())
     };
 };
 

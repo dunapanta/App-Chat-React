@@ -37,3 +37,20 @@ export const register = () => {
         });
     };
 };
+
+export const login =()=>{
+    console.log("Login");
+    return (dispatch,getState)=>{
+        console.log(getState());
+        let {
+            email,
+            password
+        }=getState().user.currentLogin;
+        auth.createUserWithEmailAndPassword(email,password).then(response=>console.log(response)).catch(function(error){
+            var errorCode=error.code;
+            var errorMessage=error.message;
+            console.log(errorCode,errorMessage);
+        });
+        
+    };
+};
