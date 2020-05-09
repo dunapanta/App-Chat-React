@@ -28,7 +28,6 @@ function HeaderLinks({ ...props }) {
       <ListItem className={classes.listItem}>
         <Link to="/registro" style={{ color: 'inherit', textDecoration: 'inherit' }}>
             <Button
-              href="https://github.com/dunapanta/App-Chat-React"
               color="transparent"
               target="_blank"
               className={classes.navLink}
@@ -43,7 +42,6 @@ function HeaderLinks({ ...props }) {
       <ListItem className={classes.listItem}>
         <Link to="/login" style={{ color: 'inherit', textDecoration: 'inherit' }}>
           <Button
-            href="https://github.com/dunapanta/App-Chat-React"
             color="transparent"
             target="_blank"
             className={classes.navLink}
