@@ -48,7 +48,14 @@ export default function Login(props) {
           {/* <i class="fas fa-user-plus" ></i> */}
           <VpnKeyRounded className={classes.icons} id="icons"  />
           <h2>Iniciar Sesión</h2>
-          <form>
+          <form
+          onSubmit={e => {
+            e.preventDefault();
+            props.handleLogin();
+
+          }}
+        >
+            
             <div className={classes.margin}>
               
               <Grid container spacing={1} alignItems="flex-end">

@@ -46,10 +46,13 @@ export const login =()=>{
             email,
             password
         }=getState().user.currentLogin;
-        auth.createUserWithEmailAndPassword(email,password).then(response=>console.log(response)).catch(function(error){
+        auth.signInWithEmailAndPassword(email,password).then(response=>console.log(response)).catch(function(error){
             var errorCode=error.code;
             var errorMessage=error.message;
             console.log(errorCode,errorMessage);
+
+           
+           
         });
         
     };

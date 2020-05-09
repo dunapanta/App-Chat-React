@@ -24,6 +24,7 @@ function HomeLogin(props) {
             <section >
                 <Login
                     handleLoginForm={props.handleLoginForm}
+                    handleLogin={props.handleLogin}
                     email={emailLogin}
                     password={passwordLogin}
                 />
