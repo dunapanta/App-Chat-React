@@ -11,6 +11,10 @@
   background-color: blue;
   position: absolute;
 }
+#icons{
+  font-size: 35px;
+  margin-top: 15px;
+}
 .Container {
   
   justify-content: center;

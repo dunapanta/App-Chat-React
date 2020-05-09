@@ -13,6 +13,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import Header from "components/Header/Header.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Back from "../../../assets/img/login2.jpg"
+import { VpnKeyRounded } from "@material-ui/icons";
 const useStyles = makeStyles((theme) => ({
   margin: {
     margin: theme.spacing(1),
@@ -44,7 +45,8 @@ export default function Login(props) {
       /> 
       <div className="Container2">
         <container fixed>
-          <i class="fas fa-user-plus" ></i>
+          {/* <i class="fas fa-user-plus" ></i> */}
+          <VpnKeyRounded className={classes.icons} id="icons"  />
           <h2>Iniciar Sesión</h2>
           <form>
             <div className={classes.margin}>
