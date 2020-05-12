@@ -51,7 +51,9 @@ export default function Login(props) {
           <form
           onSubmit={e => {
             e.preventDefault();
-            props.handleLogin();
+            console.log(props);
+            props.handleLogin(props);
+            //props.history.push('/chat');
 
           }}
         >

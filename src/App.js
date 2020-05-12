@@ -7,6 +7,7 @@ import Home from './views/Home/Home';
 
 import HomeRegister from './views/Home/HomeSections/Home-register';
 import HomeLogin from './views/Home/HomeSections/Home-login';
+import Chat from "views/Chat/Chat";
 
 
 import {
@@ -26,27 +27,20 @@ function App() {
 
           <Route path="/registro">
             <HomeRegister/>
-          </Route>                   
-
-          <Route path="/" exact >
-            <Home />
-          </Route>
-          </Switch >
-          
-        <Switch>
-          <Route path="/home" exact >
-            {/* <Home /> */}
           </Route>
 
           <Route path="/login">
             <HomeLogin/>
           </Route>
 
+          <Route path="/chat">
+            <Chat/>
+          </Route>                   
+
           <Route path="/" exact >
-            {/* <Home /> */}
+            <Home />
           </Route>
-        </Switch >  
-       
+        </Switch >
 
       </div>
     

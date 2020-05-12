@@ -7,7 +7,7 @@ import {
     
 } from "store/actions/user-actions";
 import Login from "views/Autenticacion/iniciar sesion/login-component";
-
+import { withRouter } from 'react-router-dom'
 import '../../../App.css';
 
 function HomeLogin(props) {
@@ -19,14 +19,14 @@ function HomeLogin(props) {
 
     return (
         <div >
-
-            
+            {console.log("LAS PROPS", props)}
             <section >
                 <Login
                     handleLoginForm={props.handleLoginForm}
                     handleLogin={props.handleLogin}
                     email={emailLogin}
                     password={passwordLogin}
+                    {...props}
                 />
             </section>
         </div>
@@ -34,9 +34,10 @@ function HomeLogin(props) {
     );
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state, ownProps) => {
     return {
-        user: state.user
+        user: state.user,
+        ownProps: ownProps
     };
 };
 const mapDispatchToProps = dispatch => {
@@ -47,9 +48,9 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(
+export default withRouter(connect(
     mapStateToProps,
     mapDispatchToProps
-)(HomeLogin);
+)(HomeLogin));
 
 

@@ -1,4 +1,5 @@
 import auth from "firebase/config-utils";
+import { BrowserHistory } from 'react-router-dom';
 
 export const setCurrentRegister = event => {
     return {
@@ -38,20 +39,24 @@ export const register = () => {
     };
 };
 
-export const login =()=>{
+export const login =(props)=>{
     console.log("Login");
     return (dispatch,getState)=>{
         console.log(getState());
         let {
             email,
             password
-        }=getState().user.currentLogin;
-        auth.signInWithEmailAndPassword(email,password).then(response=>console.log(response)).catch(function(error){
+            }=getState().user.currentLogin;
+
+        auth.signInWithEmailAndPassword(email,password)
+            .then(response => {
+                console.log(response)
+                props.history.push('/chat');
+            })
+            .catch(function(error){
             var errorCode=error.code;
             var errorMessage=error.message;
             console.log(errorCode,errorMessage);
-
-           
            
         });
         
