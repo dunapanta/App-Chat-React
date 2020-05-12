@@ -52,8 +52,9 @@ export default function Login(props) {
           onSubmit={e => {
             e.preventDefault();
             console.log(props);
-            props.handleLogin(props);
+            //props.handleLogin();
             //props.history.push('/chat');
+            props.handleLogin(()=> props.history.push('/chat'));
 
           }}
         >

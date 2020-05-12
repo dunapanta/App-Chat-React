@@ -19,7 +19,7 @@ function HomeLogin(props) {
 
     return (
         <div >
-            {console.log("LAS PROPS", props)}
+           
             <section >
                 <Login
                     handleLoginForm={props.handleLoginForm}
@@ -44,7 +44,12 @@ const mapDispatchToProps = dispatch => {
     return {
         
         handleLoginForm: event => dispatch(setCurrentLogin(event)),
-        handleLogin:()=> dispatch(login())
+        //handleLogin:()=> dispatch(login())
+        handleLogin: (props)=> {
+            dispatch(login());
+            console.log("Aqui se muestra props",props);
+            //props.history.push('/chat');
+        }
     };
 };
 

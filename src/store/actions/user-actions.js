@@ -39,7 +39,7 @@ export const register = () => {
     };
 };
 
-export const login =(props)=>{
+export const login =(props, callback)=>{
     console.log("Login");
     return (dispatch,getState)=>{
         console.log(getState());
@@ -51,7 +51,8 @@ export const login =(props)=>{
         auth.signInWithEmailAndPassword(email,password)
             .then(response => {
                 console.log(response)
-                props.history.push('/chat');
+                callback();
+                //props.history.push('/chat');
             })
             .catch(function(error){
             var errorCode=error.code;
