@@ -1,5 +1,5 @@
 import auth from "firebase/config-utils";
-import { BrowserHistory } from 'react-router-dom';
+// import { BrowserHistory } from 'react-router-dom';
 
 export const setCurrentRegister = event => {
     return {
@@ -39,7 +39,7 @@ export const register = () => {
     };
 };
 
-export const login =(props, callback)=>{
+export const login =( callback)=>{
     console.log("Login");
     return (dispatch,getState)=>{
         console.log(getState());

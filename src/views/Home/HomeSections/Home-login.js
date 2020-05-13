@@ -45,10 +45,11 @@ const mapDispatchToProps = dispatch => {
         
         handleLoginForm: event => dispatch(setCurrentLogin(event)),
         //handleLogin:()=> dispatch(login())
-        handleLogin: (props)=> {
-            dispatch(login());
-            console.log("Aqui se muestra props",props);
-            //props.history.push('/chat');
+        handleLogin: (callback)=> {
+        dispatch(login(callback));
+            // console.log("Aqui se muestra props",props);
+            
+            
         }
     };
 };
