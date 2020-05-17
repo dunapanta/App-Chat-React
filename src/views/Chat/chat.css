@@ -1,0 +1,55 @@
+.style{
+    
+    width: 85px;
+    height:35px;
+
+   
+}
+.container{
+    width: 100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    font-size: 25px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.header{
+    background-color: #000000;
+    color:#ffff;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+    display: flex;
+}
+
+.section{
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background-size:100px ;
+    background-repeat: no-repeat;
+    
+   border-radius: 15px;
+   /*position: absolute;*/
+   display: flex;
+
+
+   background: #2C3E50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.footer{
+    background: #E0EAFC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+width: 100%;
+height:100% ;
+border-radius: 15px;
+justify-content: space-between;
+
+}

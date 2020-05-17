@@ -12,7 +12,7 @@ import '../../../App.css';
 
 function HomeLogin(props) {
     
-    let {
+    let { 
         email: emailLogin,
         password: passwordLogin
     } = props.user.currentLogin;

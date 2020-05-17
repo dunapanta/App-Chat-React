@@ -20,7 +20,9 @@ import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import AppInfo from 'views/Home/HomeSections/AppInfo';
 import Integrantes from 'views/Home/HomeSections/Integrantes';
 
+
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
+
 
 class Home extends Component {
 

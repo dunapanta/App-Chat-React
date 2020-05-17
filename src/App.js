@@ -7,7 +7,7 @@ import Home from './views/Home/Home';
 
 import HomeRegister from './views/Home/HomeSections/Home-register';
 import HomeLogin from './views/Home/HomeSections/Home-login';
-import Chat from "views/Chat/Chat";
+import Chat from "./views/Home/HomeSections/Home-chat";
 
 
 import {
