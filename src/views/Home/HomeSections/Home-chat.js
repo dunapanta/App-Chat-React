@@ -1,15 +1,15 @@
 import React from "react";
 import Chat from "../../Chat/chat-component";
 //import Sidebar from "../../sidebar/sidebar-chat-component";
+import ConversationList from 'componentes/ConversationList/index';
+import './estilo-chat.css';
 
 
 function HomeChat(props){
     return (
-        <div>
-            <h1>Aqui esta el componente padre.</h1>
+        <div className="estilo-chat">
+            <ConversationList />
             <Chat/>
-           
-
         </div>    
     )
 }
