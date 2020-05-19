@@ -29,7 +29,7 @@ export const Chat = () => {
     const classes = useStyles();
     return (
         <div className="container">
-            <h1>Componente Chat</h1>
+            
            <header className="header">
               App Chat React 
            </header>
@@ -42,7 +42,7 @@ export const Chat = () => {
         <Input
           id="input-with-icon-adornment"
           startAdornment={
-          <InputAdornment position="start" className="input" >
+          <InputAdornment position="Start" className="input" >
               <AccountCircle />
             </InputAdornment>
           }
