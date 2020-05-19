@@ -6,7 +6,7 @@
    
 }
 .input{
-    width: 650px;
+    width: 750px;
 }
 .container{
     width: 100%;
@@ -34,16 +34,12 @@
     width: 100%;
     height: 400px;
     background-size:100px ;
-    background-repeat: no-repeat;
-    
-   border-radius: 15px;
+    background-repeat: no-repeat;   
    /*position: absolute;*/
-   display: flex;
-
-
-   background: #2C3E50;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    background: #2C3E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 .footer{
@@ -52,7 +48,13 @@ background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-2
 background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 width: 100%;
 height:100% ;
-border-radius: 15px;
 justify-content: space-between;
 
+}
+#input{
+    padding-bottom: 10px;
+    padding-right: 8px;
+    margin-top: 20px;
+    margin-left: 50px;
+    
 }

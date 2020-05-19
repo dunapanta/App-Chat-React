@@ -12,7 +12,7 @@ import Button from '@material-ui/core/Button';
 
 
 import KeyboardVoiceIcon from '@material-ui/icons/KeyboardVoice';
-import Icon from '@material-ui/core/Icon';
+
 
 import './chat.css';
 import Monitor from '../../assets/img/login2.jpg';
@@ -42,13 +42,13 @@ export const Chat = () => {
         <Input
           id="input-with-icon-adornment"
           startAdornment={
-                <InputAdornment position="end" className="input">
+          <InputAdornment position="start" className="input" >
               <AccountCircle />
             </InputAdornment>
           }
         />
       </FormControl>
-      <Button
+      {/* <Button
         variant="contained"
         color="primary"
         className={classes.button}
@@ -57,15 +57,16 @@ export const Chat = () => {
         
       >
         Enviar
-      </Button>
+      </Button> */}
       <Button
         variant="contained"
         disabled
-        color="secondary"
+        color="primary"
         className={classes.button}
         startIcon={<KeyboardVoiceIcon />}
+        id ="input"
       >
-        Talk
+       
       </Button>
            </footer>
       
