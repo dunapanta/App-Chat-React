@@ -2,8 +2,10 @@ import React from "react";
 import Chat from "../../Chat/chat-component";
 //import Sidebar from "../../sidebar/sidebar-chat-component";
 import ConversationList from 'componentes/ConversationList/index';
+import MessageList from 'componentes/MessageList/index';
 import Button from '@material-ui/core/Button';
 import './estilo-chat.css';
+import 'componentes/Messenger/Messenger.css';
 
 
 function HomeChat(props){
@@ -24,14 +26,14 @@ function HomeChat(props){
         })
     }
     return (
-        <div className="estilo-chat">
-            <div className='conver'>
+        <div className="messenger">
+            <div className='scrollable sidebar'>
                 <ConversationList  />
             </div>
-            <div className='chat'>
-                <Chat  />
+            <div className='scrollable content'>
+                <MessageList/>
             </div>
-            <Button onClick={handleUser}>BOTON</Button>
+            {/* <Button onClick={handleUser}>BOTON</Button> */}
         </div>    
     )
 }
