@@ -8,8 +8,14 @@ import './estilo-chat.css';
 function HomeChat(props){
     return (
         <div className="estilo-chat">
-            <ConversationList />
-            <Chat/>
+            <div className='conver'>
+                <ConversationList  />
+            </div>
+            <div className='chat'>
+                <Chat  />
+            </div>
+            
+           
         </div>    
     )
 }

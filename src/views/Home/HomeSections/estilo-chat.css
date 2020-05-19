@@ -1,3 +1,11 @@
 .estilo-chat {
     display:flex;
+    
+}
+
+.chat{
+    margin-left: 60px;
+}
+.conver{
+    width: 250px;
 }

@@ -34,7 +34,7 @@ export const Chat = () => {
               App Chat React 
            </header>
            <section className="section" style={{backgroundImage:`url(${Monitor})`}}>
-            aqui va el chat de conversacio
+            aqui va el chat de conversación
            </section>
            <footer className="footer">
            <FormControl className={classes.margin}>
@@ -64,7 +64,7 @@ export const Chat = () => {
         color="primary"
         className={classes.button}
         startIcon={<KeyboardVoiceIcon />}
-        id ="input"
+        id ="input1"
       >
        
       </Button>
