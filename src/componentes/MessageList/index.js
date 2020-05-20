@@ -1,3 +1,4 @@
+
 import React, {useEffect, useState} from 'react';
 import Compose from 'componentes/Compose';
 import Toolbar from 'componentes/Toolbar';
@@ -16,8 +17,13 @@ export default function MessageList(props) {
     getMessages();
   },[])
 
+ /*  useEffect(() => {
+    getMessages();
+  },[messages]) */
+
   
   const getMessages = () => {
+    console.log("EN getMESSAGES", messages)
      var tempMessages = [
         {
           id: 1,
@@ -79,8 +85,27 @@ export default function MessageList(props) {
           message: 'It looks like it wraps exactly as it is supposed to. Lets see what a reply looks like!',
           timestamp: new Date().getTime()
         },
+        
       ]
       setMessages([...messages, ...tempMessages])
+      console.log("EN getMESSAGES final", [messages])
+  }
+
+  const handleMeesage = (input) => {
+
+    const nuevoMensaje = {
+      id: 11,
+      author: 'orange',
+      message: input,
+      timestamp: new Date().getTime()
+    }
+    console.log(messages);
+
+    setMessages(
+      [...messages, nuevoMensaje],
+     /*  messages.push(nuevoMensaje) */
+      )
+      console.log(messages);
   }
 
   const renderMessages = () => {
@@ -155,14 +180,17 @@ export default function MessageList(props) {
 
         <div className="message-list-container">{renderMessages()}</div>
 
-        <Compose rightItems={[
-          <ToolbarButton key="photo" icon="ion-ios-camera" />,
-          <ToolbarButton key="image" icon="ion-ios-image" />,
-          <ToolbarButton key="audio" icon="ion-ios-mic" />,
-          <ToolbarButton key="money" icon="ion-ios-card" />,
-          <ToolbarButton key="games" icon="ion-logo-game-controller-b" />,
-          <ToolbarButton key="emoji" icon="ion-ios-happy" />
-        ]}/>
+        <Compose 
+          handleMeesage={handleMeesage}
+          rightItems={[
+            <ToolbarButton key="photo" icon="ion-ios-camera" />,
+            <ToolbarButton key="image" icon="ion-ios-image" />,
+            <ToolbarButton key="audio" icon="ion-ios-mic" />,
+            <ToolbarButton key="money" icon="ion-ios-card" />,
+            <ToolbarButton key="games" icon="ion-logo-game-controller-b" />,
+            <ToolbarButton key="emoji" icon="ion-ios-happy" />
+          ]}
+        />
       </div>
     );
 }
